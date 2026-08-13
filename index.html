@@ -35,7 +35,7 @@
     .nav-brand { display: flex; align-items: center; gap: 1.4rem; }
     .nav-logo-slot { width: 72px; height: 64px; flex-shrink: 0; border: 1.5px dashed var(--sand); background: rgba(30,58,82,.03); display: flex; align-items: center; justify-content: center; }
     .nav-logo-slot span { font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--sand); text-align: center; line-height: 1.6; }
-    .nav-logo-img { height: 64px; width: auto; display: block; }
+    .nav-logo-img { height: 64px; width: auto; display: block; object-fit: contain; }
     .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 600; letter-spacing: .12em; color: var(--navy); text-transform: uppercase; line-height: 1.2; }
     .nav-logo span { display: block; font-weight: 300; font-size: .88rem; letter-spacing: .24em; color: var(--slate); }
     .nav-links { display: flex; gap: 1.6rem; list-style: none; }
@@ -295,9 +295,7 @@
 
 <nav id="mainNav">
   <div class="nav-brand">
-    <!-- Quando o logo estiver pronto, substitua o bloco .nav-logo-slot por:
-         <img class="nav-logo-img" src="logo.png" alt="Logo Suzana Felix" /> -->
-    <div class="nav-logo-slot"><span>Logo</span></div>
+    <img class="nav-logo-img" src="logo.png" alt="Logo Suzana Felix" />
     <div class="nav-logo">Suzana Felix<span>Advocacia &amp; Consultoria</span></div>
   </div>
   <ul class="nav-links">
@@ -314,8 +312,7 @@
 
 <!-- BANNER TOPO -->
 <div class="hero-banner">
-  <!-- Substitua o src abaixo pelo caminho da imagem no servidor, ex: src="banner.jpg" -->
-  <img class="hero-banner-img" src="" alt="Suzana Felix Advocacia" />
+  <img class="hero-banner-img" src="banner.jpg" alt="" />
   <div class="hero-banner-overlay">
     <div class="hero-banner-rule"></div>
     <h2 class="hero-banner-title">Suzana Felix</h2>
